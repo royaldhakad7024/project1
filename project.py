@@ -1,0 +1,39 @@
+import random
+l=["rock","paper","scissors"]
+print("""option:
+      1-rock
+      2-paper
+      3-scissors
+      """)
+while True:
+    uc=int(input("""Game Start...
+                 1 Yes
+                 Press any number | Exit
+                 """))    
+    if uc==1:
+        userInput=int(input("""
+                            1 Rock🤜
+                            2 Paper🖐
+                            3 Scissors✌️
+                            """))
+        if userInput==1:
+            uchoice="rock"
+        elif userInput==2:
+            uchoice="paper"
+        elif userInput==3:
+            uchoice="scissors"
+        cchoice=random.choice(l)
+        if uchoice==cchoice:
+            print("Computer💻 Value=",cchoice)
+            print("User👨‍🏭 Value=",uchoice)
+            print("Game Draw🥳✨")
+        elif (uchoice=="rock" and cchoice=="scissors") or (uchoice=="paper" and cchoice=="rock") or (uchoice=="scissors" and cchoice=="paper"):
+            print("Computer💻 Value=",cchoice)
+            print("User👨‍🏭 Value=",uchoice)
+            print("You Win🥳✨")
+        else:
+            print("Computer💻 Value=",cchoice)
+            print("User👨‍🏭 Value=",uchoice)  
+            print("Computer Win🥳✨")
+    else:
+        break          
