@@ -31,25 +31,16 @@ while True:
             print("User👨‍🏭 Value=",uchoice)
             print("Game Draw🥳✨")
             tie+=1
-            # print("tie score is=",tie)
-            # print("user score is=",us)
-            # print("computer score is=",cs)
         elif (uchoice=="rock" and cchoice=="scissors") or (uchoice=="paper" and cchoice=="rock") or (uchoice=="scissors" and cchoice=="paper"):
             print("Computer💻 Value=",cchoice)
             print("User👨‍🏭 Value=",uchoice)
             print("You Win🥳✨")
             us+=1
-            # print("tie score is=",tie)
-            # print("user score is=",us)
-            # print("computer score is=",cs)
         else:
             print("Computer💻 Value=",cchoice)
             print("User👨‍🏭 Value=",uchoice)  
             print("Computer Win🥳✨")
             cs+=1
-            # print("tie score is=",tie)
-            # print("user score is=",us)
-            # print("computer score is=",cs)
 
     else:
         break     
